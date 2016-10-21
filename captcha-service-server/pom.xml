@@ -27,6 +27,7 @@
                       <phase>package</phase>
                       <goals>
                         <goal>build</goal>
+                        <goal>push</goal>
                       </goals>
                       <configuration>
                         <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
@@ -39,13 +40,6 @@
                         </resources>
                        </configuration>
                     </execution>
-                    <execution>
-                      <id>push-image</id>
-                      <phase>deploy</phase>
-                      <goals>
-                        <goal>push</goal>
-                      </goals>
-                    </execution>        
                 </executions>
                 
             </plugin>
