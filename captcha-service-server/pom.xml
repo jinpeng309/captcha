@@ -12,7 +12,7 @@
     <artifactId>captcha-service-server</artifactId>
 
     <properties>
-        <docker.image.prefix>capslock</docker.image.prefix>
+        <docker.image.prefix>capslock1874</docker.image.prefix>
     </properties>
 
     <build>
@@ -22,7 +22,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.2.3</version>
                 <configuration>
-                    <imageName>139.162.57.135:5000/${docker.image.prefix}/${project.artifactId}</imageName>
+                    <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
                     <dockerDirectory>src/main/docker</dockerDirectory>
                     <resources>
                         <resource>
