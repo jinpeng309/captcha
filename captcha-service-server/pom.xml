@@ -30,7 +30,7 @@
                         <goal>push</goal>
                       </goals>
                       <configuration>
-                        <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
+                        <imageName>139.162.57.135:5000/${docker.image.prefix}/${project.artifactId}</imageName>
                         <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
                         <resources>
                             <resource>
